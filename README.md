@@ -1,20 +1,38 @@
 # treeextension README
 
-This is the README for your extension "treeextension". After writing up a brief description, we recommend including the following sections.
+* This "treeextension" extension allows to graphically display the functional characteristics discovered , in legacy systems, in the form of a lattice (Json).
 
-## Features
+* To use this project, you should be sure that Git is installed in your computer. Then write in the terminal:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+> git clone https://github.com/fatmajallouli22/showJsonTreeExtensionVsCode.git
 
-For example if there is an image subfolder under your extension project workspace:
+It's a public repository in my github space.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+* The following website will teach you the fundamental concepts for building extensions:
+     https://code.visualstudio.com/api/get-started/your-first-extension
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+* Make sure you have Node.js installed, then install Yeoman and VS Code Extension Generator with writing in terminal:
+
+> npm install -g yo generator-code
+
+* Install the D3 Library which provides advanced functionality for tree drawing:  
+
+> npm install d3
+
+* Inside the editor, press F5 or (>Run>Start Debugging) this will compile and run the extension in a new Extension Development Host window.
+
+* in the new window , press (Ctrl+Shift+P) to run the command we want to test from the Command Palette. There is automatically a Hello World Command an I added a :
+
+    - Hello Tree Command
+    - Hello Json Command
+    - Print Json Command
+    - Show Tree Command
+
+    To test the { Hello Tree, Hello Json, Print Json } Commands, you shoud comment the import of d3 in extension.js file. Besides, you should use the "require" instead of "import" to import others dependencies.  
+    
+    The Show Tree Command didn't run normally when I decomment the importation of d3. It causes errors. To solve this problem, I used a dynamic importation "import" instead of "require". The problem is not solved yet.
 
 ## Extension Settings
 
@@ -26,28 +44,6 @@ This extension contributes the following settings:
 
 * `myExtension.enable`: Enable/disable this extension.
 * `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
 
 ## Working with Markdown
 
