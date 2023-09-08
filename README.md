@@ -11,6 +11,13 @@ It's a public repository in my github space.
 * The following website will teach you the fundamental concepts for building extensions:
      https://code.visualstudio.com/api/get-started/your-first-extension
 
+* the following websites can be useful to start with D3:
+    https://d3js.org/getting-started
+
+    https://observablehq.com/
+
+
+
 ## Requirements
 
 * Make sure you have Node.js installed, then install Yeoman and VS Code Extension Generator with writing in terminal:
